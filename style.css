@@ -1,0 +1,55 @@
+@font-face {
+  font-family: UbiSans-Bold;
+  src: url(ubisoftsans-bold.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: #171717;
+}
+
+header {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 60vh;
+  width: 100%;
+
+  background-image: url(RB6_RedCrow_Teaser.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes heading-background-animation {
+  0%, 100% {
+    background-color: #270B1411;
+  }
+
+  50% {
+    background-color: #270B1455;
+  }
+}
+
+.heading-background {
+  background-color: #270B1411;
+  backdrop-filter: blur(6px);
+
+  animation-name: heading-background-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+  width: fit-content;
+  height: fit-content;
+
+  padding: 1.5rem 2rem;
+}
+
+.heading-background h1 {
+  color: white;
+
+  font-size: 3rem;
+  font-family: UbiSans-Bold;
+}
