@@ -1,6 +1,13 @@
 @font-face {
-  font-family: UbiSans-Bold;
+  font-family: UbiSans;
+  font-weight: bold;
   src: url(ubisoftsans-bold.ttf);
+}
+
+@font-face {
+  font-family: UbiSans;
+  font-weight: normal;
+  src: url(ubisoftsans-regular.ttf);
 }
 
 body {
@@ -23,11 +30,18 @@ header {
   background-size: cover;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
 @keyframes heading-background-animation {
   0%, 100% {
-    background-color: #270B1411;
+    background-color: #aa838f11;
   }
-
+  
   50% {
     background-color: #270B1455;
   }
@@ -36,20 +50,44 @@ header {
 .heading-background {
   background-color: #270B1411;
   backdrop-filter: blur(6px);
-
+  
   animation-name: heading-background-animation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-
+  
   width: fit-content;
   height: fit-content;
-
+  
   padding: 1.5rem 2rem;
 }
 
 .heading-background h1 {
   color: white;
-
+  
   font-size: 3rem;
-  font-family: UbiSans-Bold;
+  font-family: UbiSans;
+  font-weight: bold;
+}
+
+.boxes {
+  display: block;
+  width: 20rem;
+  margin: 3rem;
+  color: white;
+  font-family: Ubisans;
+}
+
+.button {
+  background-color: #800c1a;
+  border: none;
+  padding: 10px;
+  font-family: Ubisans;
+  font-size: 1rem;
+  border-radius: 18px;
+  color: white;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #520710;
 }
