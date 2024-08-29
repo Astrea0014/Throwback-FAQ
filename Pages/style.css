@@ -37,3 +37,23 @@ body {
   .dropdown-button:hover {
     background-color: #0e0d0d;
   }
+
+  .md-container {
+    padding-left: 20%; 
+    width: 75%;
+  }
+
+footer {
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    padding-left: 20%;
+    font-family: UbiSans;
+    width: 75%;
+    color: white;
+  }
